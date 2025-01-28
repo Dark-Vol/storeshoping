@@ -1,0 +1,73 @@
+/* reset.scss */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    /* Убирает изменение размера текста на iOS */
+}
+
+body {
+    line-height: 1.5;
+    font-family: sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img,
+video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+    /* Наследует шрифты от родителя */
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+:focus-visible {
+    outline: 2px solid #000;
+    /* Обозначение видимого фокуса */
+}
+
+:focus:not(:focus-visible) {
+    outline: none;
+}
+
+code,
+pre {
+    font-family: 'Courier New', Courier, monospace;
+}
