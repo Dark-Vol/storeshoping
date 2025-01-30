@@ -1,0 +1,97 @@
+body {
+    height: 100%;
+    margin: 0;
+    min-height: 100vh;
+    background-color: $white;
+    overflow: hidden;
+}
+
+.bl_wrapper {
+    margin: 10px auto;
+    max-width: 60vw;
+}
+
+#svg_tramp {
+    display: block;
+    height: 90vh;
+    margin: -30px auto 0;
+}
+
+.btn_home {
+    position: relative;
+    display: block;
+    width: 120px;
+    color: $white;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #be6440;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.2s all;
+    z-index: 3;
+
+    &:hover,
+    &:focus {
+        transition: 0.2s all;
+        color: $white;
+        background-color: #f00;
+    }
+}
+
+.text_forgiveness {
+    font-size: 20px;
+    font-family: "Permanent Marker", cursive;
+    stroke: #525250;
+    stroke-miterlimit: 10;
+}
+
+// Цветовые стили
+$colors: (
+    st2: $Husky-Orange,
+    st4: #4a687d,
+    st6: #b0b0b0,
+    st7: #ecba9d,
+    st10: #a34426,
+    st13: #eceaea,
+    st15: #384f64,
+    st24: #a74929,
+    st25: #903820,
+    st34: #545454,
+    st35: #8d361f,
+    st38: #ccd0d3,
+    st39: #cacfd1,
+    st40: #caced1,
+    st43: #b8c0c4,
+    st44: #b9c0c5,
+    st49: $similar,
+    st55: #b8c0c3,
+    st60: $Ultramarine-Highlight,
+    st62: #525250
+);
+
+@each $class, $color in $colors {
+    .#{$class} {
+        fill: $color;
+    }
+}
+
+.st61 {
+    fill: none;
+    stroke: #c1bfc0;
+    stroke-miterlimit: 10;
+}
+
+.aboutMe a {
+    display: block;
+    width: 30%;
+    position: fixed;
+    bottom: 0.1%;
+    left: 20px;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 1.5em;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+}
